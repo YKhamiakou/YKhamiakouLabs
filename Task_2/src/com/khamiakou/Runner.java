@@ -8,7 +8,7 @@ public class Runner extends Game {
      * Fields
      */
     // length of an arrays
-    private static final int ARRAY_LN = 10;
+    private static final int ARRAY_LN = 40;
 
     /**
      * Main method
@@ -18,9 +18,6 @@ public class Runner extends Game {
      */
     public static void main(final String[] args) {
         final Game[] gameArray = new Game[Runner.ARRAY_LN];
-        final Strategy[] strategyArray = new Strategy[Runner.ARRAY_LN];
-        final Shooter[] shooterArray = new Shooter[Runner.ARRAY_LN];
-        final Quest[] questArray = new Quest[Runner.ARRAY_LN];
         // filling in game
         gameArray[0] = new Game("DOTA2", 2013, 1000, "Windows");
         gameArray[1] = new Game("CS:GO", 2015, 500, "Windows");
@@ -33,53 +30,42 @@ public class Runner extends Game {
         gameArray[8] = new Game("Civilization", "Windows");
         gameArray[9] = new Game();
         // filling in strategy
-        strategyArray[0] = new Strategy("DOTA", 2006, 1000, "Windows", 1000, 10, true);
-        strategyArray[1] = new Strategy("Starcraft", 2000, 1000, "Windows", 1000, 10, false);
-        strategyArray[2] = new Strategy("War", "Windows");
-        strategyArray[3] = new Strategy("Strateger", "MAC");
-        strategyArray[3] = new Strategy("Craft", "MAC");
-        strategyArray[4] = new Strategy("Book", "Windows");
-        strategyArray[5] = new Strategy("Strateg", "Windows");
-        strategyArray[6] = new Strategy("Printer", "Linux");
-        strategyArray[7] = new Strategy("Stimpanker", "Linux");
-        strategyArray[8] = new Strategy("Sox", "Windows");
-        strategyArray[9] = new Strategy("Stranger", "MAC");
+        gameArray[10] = new Strategy("DOTA", 2006, 1000, "Windows", 1000, 10, true);
+        gameArray[11] = new Strategy("Starcraft", 2000, 1000, "Windows", 1000, 10, false);
+        gameArray[12] = new Strategy("War", "Windows");
+        gameArray[13] = new Strategy("Strateger", "MAC");
+        gameArray[14] = new Strategy("Craft", "MAC");
+        gameArray[15] = new Strategy("Book", "Windows");
+        gameArray[16] = new Strategy("Strateg", "Windows");
+        gameArray[17] = new Strategy("Printer", "Linux");
+        gameArray[18] = new Strategy("Stimpanker", "Linux");
+        gameArray[19] = new Strategy("Sox", "Windows");
         // fill in shooter
-        shooterArray[0] = new Shooter("CS", 2012, 800, "Windows", 12, "AK");
-        shooterArray[1] = new Shooter("DDS", 2012, 300, "Windows", 10, "AKM");
-        shooterArray[2] = new Shooter("Wolfenstain", "Windows");
-        shooterArray[3] = new Shooter("Bioshock", "Windows");
-        shooterArray[4] = new Shooter("Section8", "Windows");
-        shooterArray[5] = new Shooter("MassEffect", "Windows");
-        shooterArray[6] = new Shooter("Terminator", "Windows");
-        shooterArray[7] = new Shooter("Borderlands", "Windows");
-        shooterArray[8] = new Shooter("MadMax", "Windows");
-        shooterArray[9] = new Shooter("GTA", "Windows");
+        gameArray[20] = new Shooter("CS", 2012, 800, "Windows", 12, "AK");
+        gameArray[21] = new Shooter("DDS", 2012, 300, "Windows", 10, "AKM");
+        gameArray[22] = new Shooter("Wolfenstain", "Windows");
+        gameArray[23] = new Shooter("Bioshock", "Windows");
+        gameArray[24] = new Shooter("Section8", "Windows");
+        gameArray[25] = new Shooter("MassEffect", "Windows");
+        gameArray[26] = new Shooter("Terminator", "Windows");
+        gameArray[27] = new Shooter("Borderlands", "Windows");
+        gameArray[28] = new Shooter("MadMax", "Windows");
+        gameArray[29] = new Shooter("GTA", "Windows");
         // fill in quest
-        questArray[0] = new Quest("The Witcher", 2016, 1000, "Windows", 18);
-        questArray[1] = new Quest("TES", 2012, 1000, "Windows", 18);
-        questArray[2] = new Quest();
-        questArray[3] = new Quest();
-        questArray[4] = new Quest();
-        questArray[5] = new Quest();
-        questArray[6] = new Quest();
-        questArray[7] = new Quest();
-        questArray[8] = new Quest();
-        questArray[9] = new Quest();
+        gameArray[30] = new Quest("The Witcher", 2016, 1000, "Windows", 18);
+        gameArray[31] = new Quest("TES", 2012, 1000, "Windows", 18);
+        gameArray[32] = new Quest();
+        gameArray[33] = new Quest();
+        gameArray[34] = new Quest();
+        gameArray[35] = new Quest();
+        gameArray[36] = new Quest();
+        gameArray[37] = new Quest();
+        gameArray[38] = new Quest();
+        gameArray[39] = new Quest();
         // printing information
         for (final Game element : gameArray) {
             System.out.println(element.toString());
         }
-        for (final Strategy element : strategyArray) {
-            System.out.println(element.toString());
-        }
-        for (final Shooter element : shooterArray) {
-            System.out.println(element.toString());
-        }
-        for (final Quest element : questArray) {
-            System.out.println(element.toString());
-        }
-
     }
 
 }
