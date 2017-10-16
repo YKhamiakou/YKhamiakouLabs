@@ -75,7 +75,7 @@ public class Cone implements Serializable {
      */
     @Override
     public String toString() {
-        return "Cone [hight=" + this.hight + ", base radius=" + this.radius + ", base square=2"
+        return "Cone [hight=" + this.hight + ", base radius=" + this.radius + ", base square="
                 + this.square() + "]";
     }
 
